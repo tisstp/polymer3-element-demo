@@ -7,6 +7,12 @@
   "repository": "https://github.com/PolymerLabs/polymer-3-first-element.git",
   "author": "The Polymer Project Authors",
   "license": "BSD-3-Clause",
+  "scripts": {
+    "dev": "npm run start & npm run watch",
+    "test": "polymer test",
+    "start": "polymer serve --hostname 127.0.0.1 --port 8081",
+    "watch": "browser-sync start --proxy 127.0.0.1:8081 --files '*.html, *.js, images/*' "
+  },
   "dependencies": {
     "@polymer/iron-icon": "^3.0.0-pre.12",
     "@polymer/iron-icons": "^3.0.0-pre.12",
@@ -15,5 +21,8 @@
   },
   "resolutions": {
     "@webcomponents/webcomponentsjs": "1.0.20"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.7"
   }
 }
