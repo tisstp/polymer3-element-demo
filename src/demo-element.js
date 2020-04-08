@@ -1,6 +1,6 @@
-import { PolymerElement, html } from '@polymer/polymer/polymer-element.js';
+import { html, PolymerElement } from '@polymer/polymer/polymer-element.js';
 import '@polymer/iron-icons/iron-icons.js';
-import '../icon-toggle.js';
+import './icon-toggle.js';
 
 class DemoElement extends PolymerElement {
   static get template() {
@@ -27,6 +27,7 @@ class DemoElement extends PolymerElement {
       <icon-toggle toggle-icon="settings"></icon-toggle>
     `;
   }
+
   _message(fav) {
     if (fav) {
       return 'You really like me!';
@@ -35,4 +36,5 @@ class DemoElement extends PolymerElement {
     }
   }
 }
+
 customElements.define('demo-element', DemoElement);

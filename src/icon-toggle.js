@@ -1,4 +1,4 @@
-import { PolymerElement, html } from '@polymer/polymer/polymer-element.js';
+import { html, PolymerElement } from '@polymer/polymer/polymer-element.js';
 import '@polymer/iron-icon/iron-icon.js';
 
 class IconToggle extends PolymerElement {
@@ -27,6 +27,12 @@ class IconToggle extends PolymerElement {
       toggleIcon: {
         type: String,
       },
+      pressed: {
+        type: Boolean,
+        value: false,
+        notify: true,
+        reflectToAttribute: true
+      }
     };
   }
 
