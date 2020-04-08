@@ -18,9 +18,18 @@ class IconToggle extends PolymerElement {
       </style>
 
       <!-- shadow DOM goes here -->
-      <iron-icon icon="polymer"></iron-icon>
+      <iron-icon icon="[[toggleIcon]]"></iron-icon>
     `;
   }
+
+  static get properties() {
+    return {
+      toggleIcon: {
+        type: String,
+      },
+    };
+  }
+
   constructor() {
     super();
   }
