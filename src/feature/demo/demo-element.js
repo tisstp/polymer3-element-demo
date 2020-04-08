@@ -1,6 +1,6 @@
 import { html, PolymerElement } from '@polymer/polymer/polymer-element.js';
 import '@polymer/iron-icons/iron-icons.js';
-import './icon-toggle.js';
+import '../../components/icon-toggle.js';
 
 class DemoElement extends PolymerElement {
   static get template() {
